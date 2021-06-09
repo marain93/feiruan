@@ -15,7 +15,7 @@
   },
   "commitlint": {
       "extends": [
-      "@commitlint/config-conventional"
+        "@commitlint/config-conventional"
       ]
   },
   "dependencies": {
@@ -47,20 +47,6 @@
     "lib-flexible": "^0.3.2",
     "mobile-select": "^1.1.2",
     "px2rem-loader": "^0.1.9"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
   },
   "browserslist": [
     "> 1%",

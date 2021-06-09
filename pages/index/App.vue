@@ -5,15 +5,15 @@
       <!-- search -->
       <div class="index__header-search">
         <div class="index__header-search-left">
-          <span class="el-icon-search index__header-search-icon"></span>
-          <input class="index__header-search-input" type="text" placeholder="全站优质资源尽在掌握中" />
+          <span class="el-icon-search index__header-search-icon"/>
+          <input class="index__header-search-input" type="text" placeholder="全站优质资源尽在掌握中" >
         </div>
-        <button class="index__header-search-button" @click="toUpload"></button>
+        <button class="index__header-search-button" @click="toUpload"/>
       </div>
 
       <!-- banner -->
       <div class="index__header-banner">
-        <img class="index__header-banner-image" :src="images.logo" alt="" />
+        <img class="index__header-banner-image" :src="images.logo" alt="" >
       </div>
 
       <!-- classify -->
@@ -37,7 +37,7 @@
       <div class="index__list-container">
         <div class="index__list-container-lookall">
           <span>查看全部</span>
-          <span class="el-icon-arrow-right"></span>
+          <span class="el-icon-arrow-right"/>
         </div>
 
         <div class="index__list-container-main">
@@ -50,7 +50,7 @@
             </div>
             <div class="index__list-item-info">
               <p>{{item.name}}</p>
-              <p><span class="el-icon-check"></span>{{item.job}}{{item.count}}</p>
+              <p><span class="el-icon-check"/>{{item.job}}{{item.count}}</p>
             </div>
           </div>
         </div>
@@ -61,33 +61,33 @@
       <div>
         <ul>
           <li>
-            <img :src="images.logo" alt="" />
+            <img :src="images.logo" alt="" >
             <span>网络与市场中的计算思维</span>
             <span>专业知识</span>
             <span>#计算思维#</span>
-            <img :src="images.logo" alt="" />
+            <img :src="images.logo" alt="" >
             <span>张媛媛</span>
-            <span class="el-icon-star-on"></span>
+            <span class="el-icon-star-on"/>
             <span>180</span>
           </li>
           <li>
-            <img :src="images.logo" alt="" />
+            <img :src="images.logo" alt="" >
             <span>网络与市场中的计算思维</span>
             <span>专业知识</span>
             <span>#计算思维#</span>
-            <img :src="images.logo" alt="" />
+            <img :src="images.logo" alt="" >
             <span>张媛媛</span>
-            <span class="el-icon-star-on"></span>
+            <span class="el-icon-star-on"/>
             <span>180</span>
           </li>
           <li>
-            <img :src="images.logo" alt="" />
+            <img :src="images.logo" alt="" >
             <span>网络与市场中的计算思维</span>
             <span>专业知识</span>
             <span>#计算思维#</span>
-            <img :src="images.logo" alt="" />
+            <img :src="images.logo" alt="" >
             <span>张媛媛</span>
-            <span class="el-icon-star-on"></span>
+            <span class="el-icon-star-on"/>
             <span>180</span>
           </li>
         </ul>
@@ -96,26 +96,26 @@
       <div class="message">
         <ul>
           <li>
-            <img :src="images.logo" alt="" />
+            <img :src="images.logo" alt="" >
             <span>焊接工程师</span>
             <span>深圳</span>
-            <img :src="images.logo" alt="" />
+            <img :src="images.logo" alt="" >
             <span>比亚迪股份有限公司</span>
             <span>学习资源</span>
           </li>
           <li>
-            <img :src="images.logo" alt="" />
+            <img :src="images.logo" alt="" >
             <span>焊接工程师</span>
             <span>深圳</span>
-            <img :src="images.logo" alt="" />
+            <img :src="images.logo" alt="" >
             <span>比亚迪股份有限公司</span>
             <span>学习资源</span>
           </li>
           <li>
-            <img :src="images.logo" alt="" />
+            <img :src="images.logo" alt="" >
             <span>焊接工程师</span>
             <span>深圳</span>
-            <img :src="images.logo" alt="" />
+            <img :src="images.logo" alt="" >
             <span>比亚迪股份有限公司</span>
             <span>学习资源</span>
           </li>
@@ -163,7 +163,7 @@
 import Logo from './assets/logo.png'
 
 export default {
-   data() {
+  data () {
     return {
       images: {
         logo: Logo
@@ -210,14 +210,14 @@ export default {
           count: 324
         }
       ]
-    };
-  },
-  methods: {
-    toUpload() {
-      this.$router.push('/discover/upload')
     }
   },
-};
+  methods: {
+    toUpload () {
+      this.$router.push('/discover/upload')
+    }
+  }
+}
 </script>
 
 <style lang="less" scoped>
