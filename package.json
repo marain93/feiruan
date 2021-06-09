@@ -8,15 +8,15 @@
     "lint": "vue-cli-service lint"
   },
   "husky": {
-      "hooks": {
-          "pre-commit": "npm run lint",
-          "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-      }
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
   "commitlint": {
-      "extends": [
-        "@commitlint/config-conventional"
-      ]
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   },
   "dependencies": {
     "@babel/runtime": "^7.14.0",
@@ -46,7 +46,8 @@
     "less": "^2.7.3",
     "lib-flexible": "^0.3.2",
     "mobile-select": "^1.1.2",
-    "px2rem-loader": "^0.1.9"
+    "px2rem-loader": "^0.1.9",
+    "husky": "^4.2.5"
   },
   "browserslist": [
     "> 1%",
