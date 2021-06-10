@@ -1,0 +1,63 @@
+
+// 定义一些常用css变量
+@range-mini: 0.08rem;
+@range-minier: 0.12rem;
+@range-small: 0.16rem;
+@range-smaller: 0.20rem;
+@range-normal: 0.24rem;
+@range-large: 0.32rem;
+@range-big: 0.48rem;
+@range-larger: 0.64rem;
+@range-super-large: 1.28rem;
+
+@page-background-color: #F3F5FA;
+
+@font-color-normal: #333;
+@font-color-grey: #666;
+@font-color-grey-light: #999;
+@font-color-danger: #ff6d57;
+@font-color-primary: #4070F8;
+
+@font-size-mini: 0.20rem;
+@font-size-small: 0.22rem;
+@font-size-normal: 0.24rem;
+@font-size-big: 0.28rem;
+@font-size-large: 0.34rem;
+
+@font-weight-bold: 500;
+
+
+@border-color: #E6E6E6;
+
+.flex-center {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-start {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+}
+
+.flex-between {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.page-shadow {
+	box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.06);
+}
+
+.text-overflow(@line) when (isnumber(@line)){
+  text-overflow:ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: @line;
+  overflow: hidden;
+}

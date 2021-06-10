@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import './assets/reset.less'
+import '../../assets/reset.less'
 import ElementPlus from 'element-plus'
 import 'element-plus/lib/theme-chalk/index.css'
 import Vant from 'vant'

@@ -1,6 +1,31 @@
+const path = require('path')
+const resolve = dir => path.join(__dirname, dir)
+
 module.exports = {
   // publicPath:"static/",
+  pages: {
+    index: {
+      entry: './pages/index/main.js',
+      template: 'public/index.html',
+      filename: 'login.html',
+      title: 'login'
+    },
+    my: {
+      entry: './pages/my/main.js',
+      template: 'public/index.html',
+      filename: 'my.html',
+      title: 'my'
+    }
+  },
   // 规定@的目录
+  chainWebpack: config => {
+    config.resolve.alias.set('@discover', resolve('pages/discover'))
+    config.resolve.alias.set('@task', resolve('pages/task'))
+    config.resolve.alias.set('@login', resolve('pages/login'))
+    config.resolve.alias.set('@api', resolve('api'))
+    config.resolve.alias.set('@components', resolve('components'))
+    config.resolve.alias.set('@assets', resolve('assets'))
+  },
   css: {
     loaderOptions: {
       css: {},
